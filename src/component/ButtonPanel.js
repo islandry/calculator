@@ -9,7 +9,7 @@ export default class ButtonPanel extends React.Component {
     clickHandler: PropTypes.func,
   };
 
-  handleClick = buttonName => {
+  handleClick = (buttonName) => {
     this.props.clickHandler(buttonName);
   };
 

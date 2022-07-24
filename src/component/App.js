@@ -11,9 +11,16 @@ export default class App extends React.Component {
     operation: null,
   };
 
-  handleClick = buttonName => {
+  //store state at the top level component
+
+  handleClick = (buttonName) => {
     this.setState(calculate(this.state, buttonName));
-  };
+  }; 
+  //state is passed into calculate function at this component
+  //but buttonName will be passed at the bottom level component
+  //so it is passed as props into next level component
+
+
 
   render() {
     return (
